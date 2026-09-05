@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="stylesheet.css" />
+  <title>Login</title>
+</head>
+
+<body>
+  <div class="header">
+    <div class="logo">
+      <center><img src="images/Full_Logo.png" alt="Logo" width="140px" /></center>
+    </div>
+  </div>
+
+  <div class="container">
+    <center>
+      <h1>Login to Nyamatsi Holdings</h1>
+
+      <form class="form" id="loginForm">
+        <p class="title">Login</p>
+        <p class="message">Please enter your credentials</p>
+
+        <label>
+          <input class="input" type="email" placeholder="" required />
+          <span>Email</span>
+        </label>
+
+        <label>
+          <input class="input" type="password" placeholder="" required />
+          <span>Password</span>
+        </label>
+
+        <button class="submit" type="submit">Login</button>
+        <p class="signin">Don't have an account? <a href="register.html">Register</a></p>
+      </form>
+    </center>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2025 Nyamatsi Holdings. All rights reserved.</p>
+  </div>
+
+  <!-- Redirect Script -->
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent default form behavior
+
+      // Optional success message
+      alert("Login successful! Redirecting to homepage...");
+
+      // Redirect after delay
+      setTimeout(function() {
+        window.location.href = "homepage.html";
+      }, 1000); // 1 second delay
+    });
+  </script>
+</body>
+</html>
+
+    

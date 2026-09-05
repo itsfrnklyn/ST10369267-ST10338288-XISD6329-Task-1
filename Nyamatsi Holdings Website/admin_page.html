@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="admin_stylesheet.css" />
+  <title>Admin Dashboard - Nyamatsi Holdings</title>
+</head>
+<body>
+  <div class="header">
+    <div class="logo">
+      <center><img src="images/Full_Logo.png" alt="Logo" width="140px" /></center>
+    </div>
+    <div class="nav">
+      <ul>
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <main>
+    <div class="admin-header">
+      <h1>Admin Dashboard</h1>
+    </div>
+
+    <div class="admin-section">
+      <!-- Request 1 -->
+      <div class="request-item">
+        <p><strong>Name:</strong> Jane Doe</p>
+        <p><strong>Email:</strong> jane.doe@example.com</p>
+        <div class="action-buttons">
+          <button class="approve">Approve</button>
+          <button class="reject">Reject</button>
+        </div>
+      </div>
+
+      <!-- Request 2 -->
+      <div class="request-item">
+        <p><strong>Name:</strong> Thabo Mokoena</p>
+        <p><strong>Email:</strong> thabo.mokoena@gmail.com</p>
+        <div class="action-buttons">
+          <button class="approve">Approve</button>
+          <button class="reject">Reject</button>
+        </div>
+      </div>
+
+      <!-- Request 3 -->
+      <div class="request-item">
+        <p><strong>Name:</strong> Amina Yusuf</p>
+        <p><strong>Email:</strong> amina.yusuf@outlook.com</p>
+        <div class="action-buttons">
+          <button class="approve">Approve</button>
+          <button class="reject">Reject</button>
+        </div>
+      </div>
+
+      <!-- Request 4 -->
+      <div class="request-item">
+        <p><strong>Name:</strong> Bongani Dlamini</p>
+        <p><strong>Email:</strong> bongani.dlamini@ymail.com</p>
+        <div class="action-buttons">
+          <button class="approve">Approve</button>
+          <button class="reject">Reject</button>
+        </div>
+      </div>
+
+      <!-- Request 5 -->
+      <div class="request-item">
+        <p><strong>Name:</strong> Lerato Molefe</p>
+        <p><strong>Email:</strong> lerato.molefe@gmail.com</p>
+        <div class="action-buttons">
+          <button class="approve">Approve</button>
+          <button class="reject">Reject</button>
+        </div>
+      </div>
+
+      <!-- Request 6 -->
+      <div class="request-item">
+        <p><strong>Name:</strong> Sipho Khumalo</p>
+        <p><strong>Email:</strong> sipho.khumalo@icloud.com</p>
+        <div class="action-buttons">
+          <button class="approve">Approve</button>
+          <button class="reject">Reject</button>
+        </div>
+      </div>
+
+      <!-- Request 7 -->
+      <div class="request-item">
+        <p><strong>Name:</strong> Naledi Mkhize</p>
+        <p><strong>Email:</strong> naledi.mkhize@hotmail.com</p>
+        <div class="action-buttons">
+          <button class="approve">Approve</button>
+          <button class="reject">Reject</button>
+        </div>
+      </div>
+
+      <!-- Request 8 -->
+      <div class="request-item">
+        <p><strong>Name:</strong> David Peterson</p>
+        <p><strong>Email:</strong> david.peterson@example.com</p>
+        <div class="action-buttons">
+          <button class="approve">Approve</button>
+          <button class="reject">Reject</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="footer">
+    <p>&copy; 2025 Nyamatsi Holdings. All rights reserved.</p>
+  </div>
+
+  <script>
+    const approveButtons = document.querySelectorAll('.approve');
+    const rejectButtons = document.querySelectorAll('.reject');
+
+    approveButtons.forEach(btn => {
+      btn.onclick = () => {
+        btn.parentElement.parentElement.style.display = 'none';
+        alert("User Approved!");
+      };
+    });
+
+    rejectButtons.forEach(btn => {
+      btn.onclick = () => {
+        btn.parentElement.parentElement.style.display = 'none';
+        alert("User Rejected!");
+      };
+    });
+  </script>
+</body>
+</html>

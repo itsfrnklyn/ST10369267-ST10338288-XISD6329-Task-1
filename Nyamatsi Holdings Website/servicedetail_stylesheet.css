@@ -1,0 +1,133 @@
+/* === GENERAL LAYOUT === */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* === BACKGROUND IMAGE (starts below nav) === */
+body::after {
+    content: "";
+    position: absolute;
+    top: 180px; /* Start background after nav */
+    left: 0;
+    width: 100%;
+    height: calc(100% - 180px);
+    background-image: url('images/red_background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+}
+
+/* === HEADER === */
+.header {
+    background-color: white;
+    padding: 10px 0;
+}
+
+/* === NAV BAR === */
+.nav {
+    width: 80%;
+    max-width: 900px;
+    margin: 10px auto;
+    background-color: #333;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav li {
+    flex: 1;
+}
+
+.nav a {
+    display: block;
+    padding: 16px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.nav a:hover {
+    background-color: #575757;
+}
+
+/* === MAIN === */
+main {
+    flex: 1;
+}
+
+/* === SERVICE HEADER === */
+.service-header {
+    text-align: center;
+    margin-top: 40px;
+    color: white;
+}
+
+.service-header h1 {
+    color: white;
+}
+
+/* === SERVICE SECTION === */
+.service-section {
+    width: 80%;
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-item {
+    margin-bottom: 25px;
+}
+
+.service-item h2 {
+    margin-bottom: 10px;
+    color: #1a1a1a;
+}
+
+.service-item p {
+    color: #333;
+}
+
+/* === CTA SECTION === */
+.cta-section {
+    text-align: center;
+    margin: 30px 0;
+    color: white;
+}
+
+.cta-section a {
+    color: #ffffff;
+    text-decoration: underline;
+    margin: 0 10px;
+}
+
+/* === FOOTER === */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 14px;
+    width: 80%;
+    max-width: 900px;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

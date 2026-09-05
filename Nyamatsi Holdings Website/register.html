@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="stylesheet.css" />
+  <title>Register</title>
+</head>
+
+<body>
+  <div class="header">
+    <div class="logo">
+      <center><img src="images/Full_Logo.png" alt="Logo" width="140px" /></center>
+    </div>
+  </div>
+
+  <div class="container">
+    <center>
+      <h1>Welcome to Nyamatsi Holdings</h1>
+
+      <form class="form" id="registerForm">
+        <p class="title">Register</p>
+        <p class="message">Register Your Account</p>
+
+        <div class="flex">
+          <label>
+            <input class="input" type="text" placeholder="" required />
+            <span>First Name</span>
+          </label>
+        </div>
+
+        <div class="flex">
+          <label>
+            <input class="input" type="text" placeholder="" required />
+            <span>Last Name</span>
+          </label>
+        </div>
+
+        <label>
+          <input class="input" type="email" placeholder="" required />
+          <span>Email</span>
+        </label>
+
+        <label>
+          <input class="input" type="password" placeholder="" required />
+          <span>Password</span>
+        </label>
+
+        <label>
+          <input class="input" type="password" placeholder="" required />
+          <span>Confirm Password</span>
+        </label>
+
+        <button class="submit" type="submit">Submit</button>
+        <p class="signin">Already have an account? <a href="login.html">Sign In</a></p>
+      </form>
+    </center>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2025 Nyamatsi Holdings. All rights reserved.</p>
+  </div>
+
+  <!-- Redirect Script -->
+  <script>
+    document.getElementById("registerForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent actual form submission
+
+      // Optionally validate data here or display a confirmation message
+      alert("Registration successful! Redirecting to login page...");
+
+      // Redirect to login.html after a brief delay
+      setTimeout(function() {
+        window.location.href = "login.html";
+      }, 1000); // 1 second delay
+    });
+  </script>
+</body>
+</html>
+
+    

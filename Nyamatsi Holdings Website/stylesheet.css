@@ -1,0 +1,230 @@
+/* Register form */ 
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 350px;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+  background-color: rgba(26, 26, 26, 0.84); /* 70% opaque, 30% transparent */
+  color: #fff;
+  border: 1px solid #333;
+}
+
+
+.title {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  color: #00bfff;
+}
+
+.title::before {
+  width: 18px;
+  height: 18px;
+}
+
+.title::after {
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite;
+}
+
+.title::before,
+.title::after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 0px;
+  background-color: #00bfff;
+}
+
+.message, 
+.signin {
+  font-size: 14.5px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.signin {
+  text-align: center;
+}
+
+.signin a:hover {
+  text-decoration: underline royalblue;
+}
+
+.signin a {
+  color: #00bfff;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+}
+
+.form label {
+  position: relative;
+}
+
+.form label .input {
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+  padding: 20px 05px 05px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+}
+
+.form label .input + span {
+  color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown + span {
+  top: 12.5px;
+  font-size: 0.9em;
+}
+
+.form label .input:focus + span,
+.form label .input:valid + span {
+  color: #00bfff;
+  top: 0px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.input {
+  font-size: medium;
+}
+
+.submit {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 16px;
+  transform: .3s ease;
+  background-color: #00bfff;
+}
+
+.submit:hover {
+  background-color: #00bfff96;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+/* End of Register form */ 
+
+
+
+
+
+
+/*NAV BAR*/
+.nav {
+    width: 80%; /* Not full width */
+    max-width: 900px; /* Prevents stretching too wide on big screens */
+    margin: 30px auto; /* Centers horizontally */
+    background-color: #333;
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden; /* Ensures children respect border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+/* Remove default list styles */
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Flex children take equal space */
+.nav li {
+    flex: 1;
+}
+
+/* Style the links */
+.nav a {
+    display: block;
+    padding: 16px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect */
+.nav a:hover {
+    background-color: #575757;
+}
+/*End of NAV BAR*/
+
+
+
+
+/* === FOOTER === */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body fills the full viewport */
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    margin-top: auto; /* Pushes the footer to the bottom */
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 14px;
+
+    width: 80%;              /* Match the navbar's width */
+    max-width: 900px;        /* Consistent with navbar */
+    margin: 20px auto;       /* Center it horizontally with top/bottom margin */
+    border-radius: 12px;     /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+/* End of Footer */ 
+
+
+
+/* === BACKGROUND IMAGE FOR FULL PAGE === */
+body {
+    background-image: url('images/bckgrnd_register.jpg'); /* Replace with your actual image path */
+    background-size: cover;        /* Make sure the image covers the entire background */
+    background-position: center;   /* Center the image */
+    background-repeat: no-repeat;  /* Prevent tiling */
+    background-attachment: fixed;  /* Optional: keeps background still while scrolling */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}

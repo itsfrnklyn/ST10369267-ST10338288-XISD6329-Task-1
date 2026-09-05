@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f3f3;
+}
+
+/* Overall Page Wrapper */
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+.header {
+  background-color: white;
+  padding: 10px 0;
+}
+
+/* Nav */
+.nav {
+  width: 80%;
+  max-width: 900px;
+  margin: 10px auto;
+  background-color: #333;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav li {
+  flex: 1;
+}
+
+.nav a {
+  display: block;
+  padding: 16px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.nav a:hover {
+  background-color: #575757;
+}
+
+/* Background Section */
+.background-section {
+  background: url('images/trees_background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  padding: 40px 0;
+  flex: 1;
+}
+
+/* Booking Form */
+.booking-container {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.booking-container h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-form label {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.booking-form input,
+.booking-form textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.booking-form textarea {
+  resize: vertical;
+}
+
+.booking-form button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.booking-form button:hover {
+  background-color: #444;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 12px 0;
+  font-size: 14px;
+  width: 80%;
+  max-width: 900px;
+  margin: 30px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
